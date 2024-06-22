@@ -1,0 +1,184 @@
+#Variables
+add = "Y"
+wallet = 0
+bought = "You bought "
+spent = 0
+first = True
+end = False
+
+print("Welcome to the Clash Royale card shop!")
+
+#Wallet
+while(add == "Y" or add == "yes" or add == "y"):
+  bill = input("Please insert money in bill amounts: ")
+  bill = int(bill)
+  if (bill == 5 or bill == 10 or bill == 20 or bill == 50 or bill == 100):
+    wallet = wallet + bill
+    add = input("Would you like to add more money? (Y / N):")
+    continue
+  print("Error, that is not a bill amount.")
+  add = input("Would you like to add more money? (Y / N):")
+
+print('\n')
+
+#Items and cost of Clash Royale Shop
+Hog_Rider_Card_price = 25
+Cannon_Card_price = 15
+Barbarian_Card_price = 10
+Fire_Ball_Card_price = 30
+Musketeer_Card_price = 50
+PEKKA_Card_price = 110
+Wizard_Card_price = 45
+Electro_Giant_Card_price = 140
+Mega_Knight_Card_price = 120
+
+#Introduction
+print("The daily rotation today is:")
+print("___________________________________")
+print("A1. One Rare Hog Rider Card                            | $",Hog_Rider_Card_price," |")
+print("A2. One Common Cannon Card                             | $",Cannon_Card_price," |")
+print("A3. One Common Barbarian Card                          | $",Barbarian_Card_price," |" )
+print("A4. One Rare Fireball Card                             | $",Fire_Ball_Card_price," |")
+print("A5. One Rare Musketeer Card                            | $",Musketeer_Card_price," |")
+print("A6. One Epic PEKKA Card                                | $",PEKKA_Card_price,"|")
+print("A7. One Rare Wizard Card                               | $",Wizard_Card_price," |")
+print("A8. One Epic Electro Giant Card                        | $",Electro_Giant_Card_price,"|")
+print("A9. One Legendary Mega Knight Card                     | $",Mega_Knight_Card_price,"|")
+print("Type 'done' to complete purchase.")
+
+while (wallet >= 10 and end == False):
+#First Item (A1)
+
+  if (first == True):
+    print ("You have $" + str(wallet))
+    first = False
+  else:
+    print ("You have $" + str(wallet) + " leftover.")
+
+  option = input("\nPlease make a selection:")
+  if (option == "hog rider card" or option == "Hog Rider Card" or option == "A1" or option == "a1"):
+    print("\nYou have selected One Rare Hog Rider Card.")
+    agree = input("This card costs $25. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 25):
+        wallet = wallet - Hog_Rider_Card_price
+        bought = bought + "One Rare Hog Rider Card, "
+        spent = spent + Hog_Rider_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+  #Second Item (A2)
+  if (option == "Cannon Card" or option == "cannon card" or option == "A2" or option == "a2"):
+    print("\nYou have selected One Common Cannon Card.")
+    agree = input("This card costs $15. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 15):
+        wallet = wallet - Cannon_Card_price
+        bought = bought + "One Common Cannon Card, "
+        spent = spent + Cannon_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Third Item (A3)
+  if (option == "barbarian card" or option == "Barbarian Card" or option == "A3" or option == "a3"):
+    print("\nYou have selected One Common Barbarian Card.")
+    agree = input("This card costs $10. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 10):
+        wallet = wallet - Barbarian_Card_price
+        bought = bought + "One Common Barbarian Card, "
+        spent = spent + Barbarian_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Fourth Item (A4)
+  if (option == "fire ball card" or option == "Fireball Card" or option == "A4" or option == "a4"):
+    print("\nYou have selected One Rare Fire Ball Card.")
+    agree = input("This card costs $30. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 30):
+        wallet = wallet - Fire_Ball_Card_price
+        bought = bought + "One Rare Fire Ball Card, "
+        spent = spent + Fire_Ball_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Fifth Item (A5)
+  if (option == "musketeer card" or option == "Musketeer Card" or option == "A5" or option == "a5"):
+    print("\nYou have selected One Rare Musketeer Card.")
+    agree = input("This card costs $50. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 50):
+        wallet = wallet - Musketeer_Card_price
+        bought = bought + "One Rare Musketeer Card, "
+        spent = spent + Musketeer_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Sixth Item (A6)
+  if (option == "pekka card" or option == "PEKKA Card" or option == "A6" or option == "a6"):
+    print("\nYou have selected One Epic PEKKA Card.")
+    agree = input("This card costs $110. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 110):
+        wallet = wallet - PEKKA_Card_price
+        bought = bought + "One Epic PEKKA Card, "
+        spent = spent + PEKKA_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Seventh Item (A7)
+  if (option == "wizard card" or option == "Wizard Card" or option == "A7" or option == "a7"):
+    print("\nYou have selected One Rare Wizard Card.")
+    agree = input("This card costs $45. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 45):
+        wallet = wallet - Wizard_Card_price
+        bought = bought + "One Rare Wizard Card, "
+        spent = spent + Wizard_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Eigth Item (A8)
+  if (option == "electro giant card" or option == "Electro Giant Card" or option == "A8" or option == "a8"):
+    print("\nYou have selected One Electro Giant Card.")
+    agree = input("This card costs $140. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 140):
+        wallet = wallet - Electro_Giant_Card_price
+        bought = bought + "One Epic Electro Giant Card, "
+        spent = spent + Electro_Giant_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+#Ninth Item (A9)
+  if (option == "mega knight card" or option == "Mega Knight Card" or option == "A9" or option == "a9"):
+    print("\nYou have selected One Legendary Mega Knight Card.")
+    agree = input("This card costs $120. Do you accept? (Y / N):")
+    if(agree == "Y" or agree == "y"):
+      if (wallet >= 120):
+        wallet = wallet - Mega_Knight_Card_price
+        bought = bought + "One Legendary Mega Knight Card, "
+        spent = spent + Mega_Knight_Card_price
+        print("You have successfully purchased this card.")
+      else:
+        print("You don't have enough funds!")
+
+  if (option == "done"):
+    end = True
+    if (bought == "You bought "):
+      bought = "You bought nothing "
+
+#Closing Statement
+if (end != True):
+  print ("You have insufficient funds to buy anything more.\n")
+
+print (bought + "and spent $" + str(spent) + " in total with $" + str(wallet) + " leftover. Please come again!")
