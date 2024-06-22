@@ -1,0 +1,80 @@
+print("Welcome to Popeyes Louisiana Kitchen!\n")
+
+A1="$9"
+A2="$7"
+A3="$2"
+A4="$10"
+A5="$30"
+
+print("Welcome to Popeyes. On the menu we have 8 piece nuggets, classic chicken burger, diet pepsi, spicy chicken burger, and a 16 piece family bucket.")
+
+O1=input("Would you like the chicken nuggets? Y/N?\n")
+if O1 == ("Y") or O1 == ("y"):
+  print("Ok, we are preparing your chicken nuggets.")
+  print("Your order of chicken nuggets will cost:")
+  print(A1)
+  P1=input("How would you like to pay? Cash or Card?")
+  if P1 == ("Card") or P1 == ("card"):
+    print("Ok, you will pay $9 by card for your order.\n")
+  else:
+      print("Ok, you will pay $9 with cash for your order.\n")
+else:
+  print("Ok, we will not prepare your chicken nuggets.\n")
+
+
+O2=input("Would you like the classic chicken burger? Y/N?\n")
+if O2 == ("Y") or O2 == ("y"):
+  print("Ok, we are preparing your classic chicken burger.")
+  print("Your order of the classic chicken burger will cost:")
+  print(A2)
+  P2=input("How would you like to pay? Cash or Card?")
+  if P2 == ("Card") or P2 == ("card"):
+    print("Ok, you will pay $7 by card for your order.\n")
+  else:
+      print("Ok, you will pay $7 with cash for your order.\n")
+else:
+  print("Ok, we will not prepare the classic chicken burger.\n")
+
+
+O3=input("Would you like the diet pepsi? Y/N?\n")
+if O3 == ("Y") or O3 == ("y"):
+  print("Ok, you have ordered a diet pepsi.")
+  print("Your diet pepsi will cost:")
+  print(A3)
+  P3=input("How would you like to pay? Cash or Card?")
+  if P3 == ("Card") or P3 == ("card"):
+    print("Ok, you will pay $2 by card for your order.\n")
+  else:
+      print("Ok, you will pay $2 with cash for your order.\n")
+else:
+  print("Ok, we will not give you diet pepsi.\n")
+
+
+O4=input("Would you like the spicy chicken burger? Y/N?\n")
+if O4 == ("Y") or O4 == ("y"):
+  print("Ok, we are preparing your spicy chicken burger.")
+  print("Your order of the spicy chicken burger will cost:")
+  print(A4)
+  P4=input("How would you like to pay? Cash or Card?")
+  if P4 == ("Card") or P4 == ("card"):
+    print("Ok, you will pay $10 by card for your order.\n")
+  else:
+      print("Ok, you will pay $10 with cash for your order.\n")
+else:
+  print("Ok, we will not prepare the spicy chicken burger.\n")
+
+
+O5=input("Would you like the 16 pc family bucket meal? Y/N?\n")
+if O5 == ("Y") or O5 == ("y"):
+  print("Ok, we are preparing your 16 pc family bucket meal.")
+  print("Your order of the 16 pc family bucket meal will cost:")
+  print(A5)
+  P5=input("How would you like to pay? Cash or Card?")
+  if P5 == ("Card") or P5 == ("card"):
+    print("Ok, you will pay $30 by card for your order.\n")
+  else:
+      print("Ok, you will pay $30 with cash for your order.\n")
+else:
+  print("Ok, we will not prepare the 16 pc family bucket meal.\n")
+
+print("Thank you for visiting Popeyes, we hope you enjoy your meal and come again!")
