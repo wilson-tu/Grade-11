@@ -1,0 +1,113 @@
+import random
+
+a = "Rock"
+b = "Paper"
+c = "Scissors"
+d = "Dynamite"
+e = "Waterbomb"
+
+list1 = [a, b, c, d, e]
+
+print ("You will be playing Rock Paper Scissors with a twist. The available choices are: Rock, Paper, Scissors, Dynamite, Waterbomb.")
+print ("\n You have these options to choose from: \n"  +str(list1))
+
+print("\n Rock beats paper, Paper beats rock, Scissors Beat paper, Dynamite beats all except waterbomb, and Waterbomb loses to all except Dynamite. If you both choose the same option, it will be a tie.")
+
+score = 0
+bot = 0
+score2 = 0
+
+while score2 < 5:
+  score2+=1
+  print("\n Bot score:" +str(bot) + "\n Your score:" +str(score))
+
+  print(" \nRound " +str(score2))
+  random1 = random.choice(list1)
+  
+  turn = input("What will you choose?")
+  if random1 == a:
+    print("The bot picked the " +random1)
+    if turn == b or turn == d:
+      score+=1
+      
+    elif random1 == turn:
+        print("You both chose the same option. Please try again.")
+        
+    else:
+      print("Bot scores")
+      bot+=1
+      
+  elif random1 == b:
+    
+    print("The bot chose " +random1)
+    if turn == c or turn == d:
+      score+=1
+      
+    elif random1 == turn:
+        print("You both chose the same option. Please try again.")
+        
+        print("NEXT ROUND! Round " +str(score2), "begin!")
+    else:
+      bot+=1
+      
+      
+
+  elif random1 == c:
+    
+    print("The bot picked the " +random1)
+    if turn == a or turn == d:
+      score+=1
+     
+    elif random1 == turn:
+        print("You both chose the same option. Please try again.")
+        
+    else:
+      print("Bot Scores")
+      bot+=1
+      
+      
+
+
+  elif random1 == e:
+    
+    print("The bot choose " +random1)
+    if turn == d:
+      print("Bot Scores")
+      bot+=1
+      
+    elif random1 == turn:
+        print("You both chose the same option. Please try again.")
+        
+    else:
+      score+=1
+
+
+  elif random1 == d:
+      
+      print("The bot choose " +random1)
+      if turn == e:
+        score+=1
+        
+      elif random1 == turn:
+        print("You both chose the same option. Please try again.")
+        
+      else:
+        print("Bot Scores")
+        bot+=1
+
+
+if bot > score:
+  print("\n The Bot is victorious.")
+  print("The bot's final score is " +str(bot))
+  print("Your final score is " +str(score))
+
+
+elif bot < score:
+  print("\n You are victorious.")
+  print("The bot's final score is " +str(bot))
+  print("Your final score is " +str(score))
+
+elif bot == score:
+  print("\n You both have an equal amount of points. The game is a draw.")
+  print("The bot's final score is: " +str(bot))
+  print("Your final score is: " +str(score))
