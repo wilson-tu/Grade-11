@@ -1,0 +1,411 @@
+#Variables
+import time
+t=0.5
+t1=1
+t2=3
+path=0
+loop=True
+
+while loop:
+  print("You are walking in rural China and meet a square-headed Chinese man. He begins dancing and speaking to you in a dialect you are not familiar with.\n")
+
+  time.sleep(t1)
+  choice=input("Do you dance with the square-headed man? Y/N ")
+  if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+    path = 1234 # Dance with man
+  else:
+    path = 5432 # Dont dance with man
+
+  if path == 1234: # Dance with man
+    print("\nYou chose to dance with the man. He wishes you good wealth and health.")
+    time.sleep(t)
+    print("\nYou continue your trek throughout rural China. ")
+    time.sleep(t)
+    print("\nNow you see a car with an estranged man.")
+    time.sleep(t1)
+    choice=input("\nDo you want to get in? Yes or No? ")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 5234 # Get in car
+    else:
+      path = 6245 # Dont get in car
+
+  if path == 5432: # Dont dance with man
+    choice = input("\nYou have incredibly offended the man and he forces you to dance at gunpoint. What moves do you break out? (floss,gangnam style,moonwalk):")
+
+    if choice == "floss":
+      time.sleep(t)
+      print("\nYou have enraged the man and he shoots you several times. You bleed to death in a floss position.")
+      time.sleep(t)
+      print("\n~~~~~~~YOU DIED~~~~~~~")
+      print("~~YOU FLOSS, YOUR LOSS~~")
+      choice=input("\nDo you dare play again?")
+      if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+        path = 0
+      else:
+        path = 0
+        loop = False
+    
+    if choice == "moonwalk":
+      time.sleep(t)
+      print("\nYour moon walking is so smooth, it encaptivates the man and you elude him with yo sick moves.")
+      time.sleep(t)
+      print("\nIncredibly, the moonwalk transcends the laws of physics and you slide your way on the surface of the moon. You do not need oxygen because the universe does not allow you to die. ")
+      time.sleep(t)
+      choice = input("\nYou find yourself on the dark side of the moon and find aliens. Befriend them? Y/N")
+      if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+        path = 8756 # Befriend aliens
+      else:
+        path = 2359 # Be racist
+    
+  if path == 8756: # Befriend aliens
+    print("\nYou do not understand their language, so you perform your peace dance.")
+    time.sleep(t)
+    print("\nYou captivate them with your smooth grooves.")
+    time.sleep(t)
+    print("\nOne of the aliens comes up to you and begins speaking to you.")
+    time.sleep(t)
+    print("\n\"Æ×§±¶µØŤ??\"")
+    time.sleep(t)
+    print("You do not understand his dialect. Do you teach them the way of the moonwalk? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 4596 # Teach the walk
+    else:
+      path = 1653 # Dont teach
+    
+  if path == 4596: # Teach the walk
+    time.sleep(t)
+    print("\nYou break up the dance in comprehensible steps. The aliens follow suite and are great learners.")
+    time.sleep(t)
+    print("\nSoon, the entire moon populace knows the way of the walk and you are crowned King of the Moon.")
+    time.sleep(t)
+    choice=input("\nWith unrelenting support and followers, do you invade Earth with the moonwalkers? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 4579 # Invade
+    else:
+      path = 1673 # Dont invade
+  
+  if path == 4579: # Invade
+    time.sleep(t)
+    choice = input("\nAs King of the Moon, you conquer Earth in a decisive victory after you and your army trample the world (by moonwalking). Do you celebrate by eating poutine? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      time.sleep(t)
+      print("\nYou decide to graciously yet vigorously eat the poutine, proudly chomping down on each fry and sucking the succulent gravy.")
+      time.sleep(t)
+      print("\n~~~~~~~YOU WON~~~~~~~")
+      print("~~THE GOOD ENDING~~")
+      choice=input("\nDo you dare play again?")
+      if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+        path = 0
+      else:
+        path = 0
+        loop = False
+    else:
+      time.sleep(t)
+      print("\nYou decide not to eat the poutine. However, unbeknownst to you, you suffer from lack of poutine injection. You pass away because of this condi")
+      time.sleep(t)
+      print("\n~~~~~~~YOU DIED~~~~~~~")
+      print("~~POUTINE DEFICIENCY~~")
+      choice=input("\nDo you dare play again?")
+      if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+        path = 0
+      else:
+        path = 0
+        loop = False
+
+  if path == 1673: # Dont invade
+    time.sleep(t)
+    choice = input("\nYou decide not to launch an invasion on the Earthlings. You spend a lot of time on the Moon and develop a crush on a Moon lady. Ask her out? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 9364 # Rejection
+    else:
+      path = 1673 # Don't ask her
+
+  if path == 9364: # Rejection
+    time.sleep(t)
+    input=choice("\nYou ask her for a date but she snubs you. You do not forget her disrespect. Do you take revenge? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 9492 # Revenge
+    else:
+      path = 9265 # No revenge
+
+  if path == 9492: # revenge
+    time.sleep(t)
+    print("\nYou greatly angered the aliens. For this offense, they imprison you and make you dance for the rest of your days.")
+    time.sleep(t)
+    print("\n~~~~YOU LOSE~~~~")
+    print("~~DANCE TIL YOU'RE DEAD~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+    
+  if path == 9265: # no revenge
+    time.sleep(t)
+    print("\nYou handle it like a champ and decide to spend the rest of your days smoothily groovin' to, \"In the Summertime.\"")
+    time.sleep(t)
+    print("\n~~~~~YOU WON~~~~~")
+    print("~SMOOTH~GROOVES~BROTHER~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False  
+
+  if path == 1673: # Don't ask her
+    time.sleep(t)
+    print("\nYou decide not to ask her. After many more weeks of living on the moon among the moon people, the moon lady takes interest in you.")
+    time.sleep(t)
+    choice = input("\nDo you risk your image as a king or indulge yourself in love? (king,love)")
+    if choice == "love":
+      path = 8462 # cheated women amirite( ͡° ͜ʖ ͡°)
+    elif choice == "king":
+      path = 9762 # king
+
+  if path == 9762: # king
+    time.sleep(t)
+    print("\nYou decide that keeping your pristine status as King of the Moon is more important than indulging in love. So, you spend the rest of your days groovin' and movin' to the aliens.")
+    print("\n~~~~~YOU WON~~~~~")
+    print("~BROS BEFORE HOES~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False  
+
+  if path == 8462: # cheated women amirite( ͡° ͜ʖ ͡°)
+    time.sleep(t)
+    print("\nIt turns out the moon lady did not have genuine love for you. She exploits your wealth and status whilst dishonouring your name.")
+    time.sleep(t)
+    print("\nYou become depressed and eventually moonwalk yourself into the sun; your eternal resting place.")
+    time.sleep(t)
+    print("\n~~~~YOU LOSE~~~~")
+    print("~~DANCE TIL YOU'RE DEAD~~")
+
+  if path == 1653: # Dont teach
+    time.sleep(t)
+    print("\nYou decide to spend the rest of your days smoothily groovin' to the aliens of the moon.")
+    time.sleep(t)
+    print("\n~~~~~YOU WON~~~~~")
+    print("~SMOOTH~GROOVES~BRO~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+  if path == 2359: # Be racist
+    time.sleep(t)
+    print("\nYou did not befriend the aliens. They capture you and make you dance for the rest of your days.")
+    time.sleep(t)
+    print("\n~~~~YOU SUFFER~~~~")
+    print("~~DANCE TIL YOU'RE DEAD~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+    
+  if choice == "gangnam style":
+    time.sleep(t)
+    choice = input("\nYou perform the gangnam style and the man is challenged by your raw skill. He challenges you to a dance-off. Do you accept? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 6345 # Dance off
+    else:
+      path = 5397 # No dance off
+      
+  if path == 6345: # Dance off
+    time.sleep(t1)
+    print("\n The square-head man begins by busting out the whip + nae nae and the stanky leg.")
+    time.sleep(t1)
+    print("\nYou retaliate by dancing all the moves from Fortnite Battle Royale and the man is left flabbergasted.")
+    time.sleep(t1)
+    print("\nAfter suffering a terrible defeat, the square-headed man takes his own life instantly.")
+    time.sleep(t)
+    print("\n~~~~~YOU WON~~~~~")
+    print("~~VICTORY ROYALE~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+  if path == 5397: # No dance off
+    time.sleep(t)
+    print("The man, disappointed by your decision, decides to tackle you to the ground whilst screaming. The impact of your head hitting the ground kills you.")
+    time.sleep(t)
+    print("\n~~~~~~~YOU DIED~~~~~~~")
+    print("~NO SKILLS TO PAY THE BILLS~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+    
+  if path == 6245: # Dont get in car
+    time.sleep(t1)
+    print("You chose not to get in the car. As you continue your journey, a van of organ traffickers kidnap you.")
+    time.sleep(t1)
+    choice=input("You wake up in an ice tub hours later with bandages covering your waist. Disorientated and cold, do you get out? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 2456 # Leave tub
+    else:
+      path = 4231 # Wait in tub
+      
+  if path == 4231: # Wait in tub
+    time.sleep(t1)
+    print("\nYou wait in the ice tub. Eventually, the traffickers take your other vital organs.")
+    time.sleep(t2)
+    print("\n~~~~~~~YOU DIED~~~~~~~")
+    print("~~YOU ARE A BUFFOON!~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+  
+  if path == 2456: # Leave tub
+    time.sleep(t1)
+    choice=input("\n You leave the bathtub and see a pair of slick shades on the toilet. Do you put them on? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 3987 # Put on shades
+    else:
+      path = 9832 # Dont put on shades
+  
+  if path == 3987: # Put on shades
+    print("\n You put on the shades and exit the bathroom. As you are trying to leave,you are spotted by the gangsters.")
+    time.sleep(t2)
+    print("\nThey see your slick shades and are intimated by you. They let you leave unscathed.")
+    time.sleep(t2)
+    print("\n~~~~~~~YOU WON~~~~~~~")
+    print("~~YOU ARE A SLICK BOAH!~~")
+    choice=print("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+  if path == 9832: # Dont put on shades
+    print("\n You don't put on the shades and exit the bathroom. As you are trying to leave, you are spotted by the gangsters.")
+    time.sleep(t2)
+    print("\nThey see you and aren't intimidated by you.")
+    time.sleep(t1)
+    print("\nThey beat you to a pulp.")
+    time.sleep(t2)
+    print("\n~~~~~~~YOU DIED~~~~~~~")
+    print("~~YOU AIN'T SLICK ENOUGH!~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+  
+  if path == 5234: # Get in car
+    print("\n You get in the strange man's car and he drives you through the serene lands of CHINA. ")
+    time.sleep(t1)
+    print("\n After hours of driving, he takes you to his secret dojo.")
+    time.sleep(t1)
+    print("\nAs you enter the secret dojo, you are underwhelmed by its interior .")
+    time.sleep(t1)
+    choice=int(input("\nThe estranged man asks, \"How many times have you foughten?\" (#):"))
+    if choice == 0:
+      path = 4986 # Kicked out
+    elif choice <= 2:
+      print("\n I am unsurprised, I can tell by the way you're standing.")
+      path = 9784 # Train
+    elif choice > 2:
+      print("\n Excellent, I will teach you the secret arts of Wing-Chun SUPREME.")
+      path = 9784 # Train
+      
+  if path == 4986: # Kicked out
+    print("\n You are kicked out of the Dojo and live the rest of your days in shame.")
+    time.sleep(t1)
+    print("\n~~~~~~~YOU LOSE~~~~~~~")
+    print("~~YOU ARE NOT WORTHY LOL~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+  if path == 9784: # Train
+    print("\nYou live a vigorous lifestyle and undergo disciplinary training to master Wing-Chun SUPREME.")
+    time.sleep(t1)
+    choice = input("\n One day after you take a piss outside, you come back to the dojo and spot 10 black belts intrude the dojo. They swiftly assasinate your master, do you avenge him? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 4985 # Avenge master
+    else:
+      path = 8476 # Shamed
+  
+  if path == 8476: # Shamed
+    print("\nYou choose not to fight and walk away in shame and cowardice. As you are leaving, the assassins laugh at you and begin dancing. Subesequently, you cannot bear the shame anymore and take your own life.")
+    time.sleep(t1)
+    print("\n~~~~~~~YOU LOSE!~~~~~~~")
+    print("~~COWARD LOL!~~")
+    choice=input("\nDo you dare play again?")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
+
+  if path == 4985: # Avenge master
+    print("\nFilled with rage you shout,\"you killed my master, now you will pay with your lives lmao!\"")
+    time.sleep(t)
+    choice=input("\n One assassin rapidly rushes toward you, do you kick his NUTS or gouge his EYES?")
+    if choice == "nuts" or choice == "NUTS":
+      print("\nYou throw your leg foward crushing his balls as he growls in excruciating pain.")
+    elif choice == "eyes" or choice == "EYES":
+      print("\nYou gouge his eyes and he begins crying for his mommay.")
+    choice = input("\n Overconfident, you gloat and taunt your enemies. \"That all you got bozos?\" Your enemies become frightened and beg for mercy. Show mercy? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 7645 # Show mercy
+    else:
+      path = 1376 # No mercy
+
+  if path == 1376: # No mercy
+    time.sleep(t)
+    choice = -1
+    while choice == -1:
+      choice = int(input("\n You decide to spare no mercy. How many times do you punch them? (#)"))
+      if choice < 5:
+        print("You must punch them more than 4 times.")
+        choice = -1
+      if choice >= 5:
+        time.sleep(t)
+        print("You impart godly fists among the assasins and they all crumble.")
+        time.sleep(t)
+        print("\n~~~~~~~YOU WON~~~~~~~")
+        print("~~YOU ARE THE WING-CHUN SUPREME MASTER!~~")
+        choice=print("\nDo you dare play again?")
+        if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+          path = 0
+        else:
+          path = 0
+          loop = False
+  
+  if path == 7645: # Show mercy
+    time.sleep(t)
+    choice = input("\nYou feel merciful and forgive your enemies. They beg you to impart with them words of wisdom. What do you advise them? (write anything): ")
+    print("\"Woah, \"" + choice + "\" is so deep!\"")
+    time.sleep(t)
+    print("\n~~~~~~~YOU WON~~~~~~~")
+    print("~~YOU HAVE ACQUIRED NEW FOLLOWERS~~")
+    choice=print("\nDo you dare play again? Y/N")
+    if choice == "Y" or choice == "y" or choice == "Yes" or choice == "yes":
+      path = 0
+    else:
+      path = 0
+      loop = False
