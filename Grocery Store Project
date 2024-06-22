@@ -1,0 +1,292 @@
+#Intro
+print("Welcome to the Poopo's Grocery Store")
+print("Items in Stock: ")
+
+#Stock
+
+#Dairy
+#Milk
+dairy1, d_price1 = "Milk", 4.25
+milk1 = "Chocolate Milk"
+milk2 = "100% Milk"
+milk3 = "Strawberry Milk"
+#Cheese
+dairy2, d_price2 = "Cheese", 4.50
+cheese1 = "Blue Cheese"
+cheese2 = "Parmesan Cheese"
+cheese3 = "Maggot Cheese"
+#Yogurt
+dairy3, d_price3 = "Yogurt", 3.50
+yogurt1 = "Greek Yogurt"
+yogurt2 = "Yogurt Tubes"
+yogurt3 = "Yop Bottle"
+
+print("\n||| Dairy |||")
+print("\n A1 - {} Price:   ${} ".format(dairy1, d_price1))
+print(" A2 - {} Price:  ${} ".format(dairy2, d_price2))
+print(" A3 - {} Price:  ${} ".format(dairy3, d_price3))
+
+#Produce
+#Fruit
+plant1, p_price1 = "Fruits", 1.00
+fruit1 = "Red Apple"
+fruit2 = "Durian"
+fruit3 = "Lemon"
+#Veggies
+plant2, p_price2 = "Vegetables", 1.25
+veggie1 = "Carrot"
+veggie2 = "Celery"
+veggie3 = "Onion"
+#Berries
+plant3, p_price3 = "Berries", 1.50
+berry1 = "Mulberry"
+berry2 = "Strawberry"
+berry3 = "Blackberry"
+
+print("\n||| Produce |||")
+print("\n B1 - {} Price:       ${} ".format(plant1, p_price1))
+print(" B2 - {} Price:  ${} ".format(plant2, p_price2))
+print(" B3 - {} Price:      ${} ".format(plant3, p_price3))
+
+#Butcher's section
+#Chicken
+meat1, m_price1 = "Chicken", 10.00
+chick1 = "Wing"
+chick2 = "Breast"
+chick3 = "Feet"
+#Beef
+meat2, m_price2 = "Beef", 15.00
+beef1 = "Ankle"
+beef2 = "Filet Mignon"
+beef3 = "Sirloin"
+#Pork
+meat3, m_price3 = "Pork", 12.00
+pork1 = "Pig Snout"
+pork2 = "Pork Rib"
+pork3 = "Bacon"
+
+print("\n||| Meat |||")
+print("\n C1 - {} Price:  ${} ".format(meat1, m_price1))
+print(" C2 - {} Price:     ${} ".format(meat2, m_price2))
+print(" C3 - {} Price:     ${} ".format(meat3, m_price3))
+
+items = 0
+dairy_bought1 = 0
+dairy_bought2 = 0
+dairy_bought3 = 0
+
+pfood_bought1 = 0
+pfood_bought2 = 0
+pfood_bought3 = 0
+
+meat_bought1 = 0
+meat_bought2 = 0
+meat_bought3 = 0
+
+while items != 5634876:
+  items = input("\nPlease select your items. Enter 'done' when complete: ")
+  #Dairy
+  #Milk
+  if items == "a1" or items == "A1":
+    print("| Milk |")
+    print("| 1 - {}  |".format(milk1))
+    print("| 2 - {}     |".format(milk2))
+    print("| 3 - {} |".format(milk3))
+    milk = input("\nPlease choose your type of milk: ")
+    if milk == "1":
+      dairy_bought1 += 1
+      print("\nYou now have {} Chocolate Milk.".format(dairy_bought1))
+    elif milk == "2":
+      dairy_bought1 += 1
+      print("\nYou now have {} 100% Milk.".format(dairy_bought1))
+    elif milk == "3":
+      dairy_bought1 += 1
+      print("\nYou now have {} Strawberry Milk.".format(dairy_bought1))
+    else:
+      print("\nSorry there is no more milk.")
+
+  #Cheese
+  elif items == "a2" or items == "A2":
+    print("| Cheese |")
+    print("| 1 - {}  |".format(cheese1))
+    print("| 2 - {}   |".format(cheese2))
+    print("| 3 - {} |".format(cheese3))
+    cheese = input("\nPlease choose your type of Cheese: ")
+    if cheese == "1":
+      dairy_bought2 += 1
+      print("\nYou now have {} Blue Cheese.".format(dairy_bought2))
+    elif cheese == "2":
+      dairy_bought2 += 1
+      print("\nYou now have {} Parmesan Cheese.".format(dairy_bought2))
+    elif cheese == "3":
+      dairy_bought2 += 1
+      print("\nYou now have {} Maggot Cheese.".format(dairy_bought2))
+    else:
+      print("\nSorry there is no more Cheese.")
+
+  #Yogurt
+  elif items == "a3" or items == "A3":
+    print("| Yogurt |")
+    print("| 1 - {} |".format(yogurt1))
+    print("| 2 - {}          |".format(yogurt2))
+    print("| 3 - {}      |".format(yogurt3))
+    yogurt = input("\nPlease choose your type of Yogurt: ")
+    if yogurt == "1":
+      dairy_bought3 += 1
+      print("\nYou now have {} Greek Yogurt.".format(dairy_bought3))
+    elif yogurt == "2":
+      dairy_bought3 += 1
+      print("\nYou now have {} Yogurt Tubes.".format(dairy_bought3))
+    elif yogurt == "3":
+      dairy_bought3 += 1
+      print("\nYou now have {} Yop Bottle.".format(dairy_bought3))
+    else:
+      print("\nSorry there is no more Yogurt.")
+
+  #Produce
+  #Fruits
+  elif items == "b1" or items == "B1":
+    print("| Fruits |")
+    print("| 1 - {}  |".format(fruit1))
+    print("| 2 - {} |".format(fruit2))
+    print("| 3 - {} |".format(fruit3))
+    fruit = input("\nPlease choose your type of Fruit: ")
+    if fruit == "1":
+      pfood_bought1 += 1
+      print("\nYou now have {} Red Apple.".format(pfood_bought1))
+    elif fruit == "2":
+      pfood_bought1 += 1
+      print("\nYou now have {} Durian.".format(pfood_bought1))
+    elif fruit == "3":
+      pfood_bought1 += 1
+      print("\nYou now have {} Lemon.".format(pfood_bought1))
+    else:
+      print("\nSorry there is no more Fruit.")
+
+  #Veggie
+  elif items == "b2" or items == "B2":
+    print("| Vegetables |")
+    print("| 1 - {}     |".format(veggie1))
+    print("| 2 - {}     |".format(veggie2))
+    print("| 3 - {} |".format(veggie3))
+    veggie = input("\nPlease choose your type of Vegetable: ")
+    if veggie == "1":
+      pfood_bought2 += 1
+      print("\nYou now have {} Carrot.".format(pfood_bought2))
+    elif veggie == "2":
+      pfood_bought2 += 1
+      print("\nYou now have {} Celery.".format(pfood_bought2))
+    elif veggie == "3":
+      pfood_bought2 += 1
+      print("\nYou now have {} Onion.".format(pfood_bought2))
+    else:
+      print("\nSorry there is no more Vegetables.")
+
+  #Berries
+  elif items == "b3" or items == "B3":
+    print("| Berries |")
+    print("| 1 - {} |".format(berry1))
+    print("| 2 - {}  |".format(berry2))
+    print("| 3 - {} |".format(berry3))
+    berry = input("\nPlease choose your type of Berry: ")
+    if berry == "1":
+      pfood_bought3 += 1
+      print("\nYou now have {}  Mulberry.".format(pfood_bought3))
+    elif berry == "2":
+      pfood_bought3 += 1
+      print("\nYou now have {} Strawberry.".format(pfood_bought3))
+    elif berry == "3":
+      pfood_bought3 += 1
+      print("\nYou now have {} Blackberry.".format(pfood_bought3))
+    else:
+      print("\nSorry there is no more Berry.")
+
+  #Meat
+  #Chicken
+  elif items == "c1" or items == "C1":
+    print("| Chicken |")
+    print("| 1 - {}      |".format(chick1))
+    print("| 2 - {} |".format(chick2))
+    print("| 3 - {}     |".format(chick3))
+    chick = input("\nPlease choose your cut of Chicken: ")
+    if chick == "1":
+      meat_bought1 += 1
+      print("\nYou now have {} Wing.".format(meat_bought1))
+    elif chick == "2":
+      meat_bought1 += 1
+      print("\nYou now have {} Breast.".format(meat_bought1))
+    elif chick == "3":
+      meat_bought1 += 1
+      print("\nYou now have {} Feet.".format(meat_bought1))
+    else:
+      print("\nSorry there is no more Chicken.")
+
+  #Beef
+  elif items == "c2" or items == "C2":
+    print("| Beef |")
+    print("| 1 - {}     |".format(beef1))
+    print("| 2 - {} |".format(beef2))
+    print("| 3 - {}    |".format(beef3))
+    beef = input("\nPlease choose your cut of Beef: ")
+    if beef == "1":
+      meat_bought2 += 1
+      print("\nYou now have {} Beef Ankle.".format(meat_bought2))
+    elif beef == "2":
+      meat_bought2 += 1
+      print("\nYou now have {} Filet Mignon.".format(meat_bought2))
+    elif beef == "3":
+      meat_bought2 += 1
+      print("\nYou now have {} Sirloin.".format(meat_bought2))
+    else:
+      print("\nSorry there is no more Beef.")
+
+  #Pork
+  elif items == "c3" or items == "C3":
+    print("| Pork |")
+    print("| 1 - {} |".format(pork1))
+    print("| 2 - {} |".format(pork2))
+    print("| 3 - {}   |".format(pork3))
+    pork = input("\nPlease choose your cut of Pork: ")
+    if pork == "1":
+      meat_bought3 += 1
+      print("\nYou now have {} Pig Snout.".format(meat_bought3))
+    elif pork == "2":
+      meat_bought3 += 1
+      print("\nYou now have {} Pork Rib.".format(meat_bought3))
+    elif pork == "3":
+      meat_bought3 += 1
+      print("\nYou now have {} Bacon.".format(meat_bought3))
+    else:
+      print("\nSorry there is no more Pork.")
+
+  #After Taxation
+  elif items == "done":
+    print("\nYou selected", dairy_bought1, " Milks,", dairy_bought2,
+          " Cheese,", dairy_bought3, " Yogurt,", pfood_bought1, " Fruit,",
+          pfood_bought2, " Vegetables,", pfood_bought3, " Berry,",
+          meat_bought1, " Chicken,", meat_bought2, " Beef, and ", meat_bought3,
+          " Pork.")
+    dairy_total = (d_price1 * dairy_bought1) + (d_price2 * dairy_bought2) + (
+      d_price3 * dairy_bought3)
+    pfood_total = (p_price1 * pfood_bought1) + (p_price2 * pfood_bought2) + (
+      p_price3 * pfood_bought3)
+    meat_total = (m_price1 * meat_bought1) + (m_price2 * meat_bought2) + (
+      m_price3 * meat_bought3)
+    final_total = meat_total + pfood_total + dairy_total
+    print("\nYour total is $" + str(final_total))
+
+    tax = final_total + (0.0625 * final_total)
+
+    #Receipt
+    print("\nAfter Tax, your total is $" + str(tax))
+    pay = float(input("Please insert your payment: "))
+    while pay < tax:
+      print("\nThat is not enough money. Please insert the correct amount.")
+      pay = float(input("\nPlease insert your payment: "))
+    if pay == tax:
+      print("\nThanks! Come again soon.")
+    elif pay > tax:
+      change = pay - tax
+      print("\nThank you. Your change is $" + str(change))
+      print("Please come again soon.")
+    break
