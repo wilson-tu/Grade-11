@@ -1,0 +1,89 @@
+#First item
+cost=1000
+cost=int(cost)
+
+print("Welcome to the Blackmarket")
+print("Our Mug Rootbeers cost $"+str(cost))
+
+purchase=input("The Mug Rootbeers costs $1000. Please input how much you would like to pay: ")
+print("\n")
+purchase=int(purchase)
+
+while purchase < cost:
+    print("That is not the correct amount. Please enter a sufficient amount. ")
+    purchase=input("The kidney will cost $1000. Please input how much you would like to pay: ")
+    print("\n")
+    purchase=int(purchase)
+
+if purchase == cost:
+  print("You have paid $1000 for your kidney, please enjoy.\n")
+
+elif purchase > cost:
+  print("You have paid more than what's needed, your change will be:")
+  change = purchase - cost
+  print("$"+str (change))
+  print("\n")
+
+else:
+  print("ok")
+
+#second item
+cost2=2000
+cost2=int(cost2)
+
+print("Would you like a limited deluxe poster of Lorde?")
+print("the Lorde poster will cost $"+str(cost2))
+
+purchase2=input("This Lorde poster will be $2000, please pay: ")
+print("\n")
+purchase2=int(purchase2)
+
+while purchase2 < cost2:
+  print("This is an insufficient fund for the Lorde poster.")
+  purchase2=input("this Lorde poster is $2000, pay: ")
+  print("\n")
+  purchase2=int(purchase2)
+
+if purchase2 == cost2:
+  print("You have successfully purchased the Limited Deluxe Lorde poster. \n")
+
+elif purchase2 > cost2:
+  print("Your funds have exceeded the cost of the Lorde Poster.")
+  print("The systeme will now give you your change.")
+  print("Here is your change: ")
+  change2 = purchase2 - cost2
+  print("Your change is $"+str (change2))
+  print("\n")
+
+else:
+  print("lorde lorde lorde ya ya ya")
+
+#Third item
+cost3=10000
+cost3=int(cost3)
+
+print("The secret to Obama's last name will be $"+str (cost3))
+
+purchase3=input("The price is $10000: ")
+print("\n")
+purchase3=int(purchase3)
+
+while purchase3 < cost3:
+  print("This is an insufficient fund for Obama's last name.")
+  purchase3=input("This information costs $10000, pay: ")
+  print("\n")
+  purchase3=int(purchase3)
+
+if purchase3 == cost3:
+  print("You have successfully obtained Obama's last name. \n")
+
+elif purchase3 > cost3:
+  print("You have overpayed for the secret to Obama's last name. Here is the change.")
+  change3 = purchase3 - cost3
+  print("change: $"+str (change3))
+
+else:
+  print("ok")
+
+#Closing 
+print("Please come again!")
